@@ -1,6 +1,6 @@
 g_PluginInfo =
 {
-	Name = "Faction",
+	Name = "Factions",
 	Date = "2017-29-9",
 	Description = "This plugin implements the factions game type",
 
