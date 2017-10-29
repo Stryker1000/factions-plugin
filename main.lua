@@ -3,8 +3,8 @@ PLUGIN = nil
 function Initialize(Plugin)
 	Plugin:SetName("Factions")
 	Plugin:SetVersion(1)
-    
-    dofile(cPluginManager:GetPluginsPath() .. "/Info.lua")
+	
+    dofile(cPluginManager:GetPluginsPath() .. "/InfoReg.lua")
     RegisterPluginInfoCommands()
     RegisterPluginInfoConsoleCommands()
 
