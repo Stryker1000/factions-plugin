@@ -12,7 +12,7 @@ function Initialize(Plugin)
 
     PLUGIN = Plugin
     
-	cPluginManager.BindCommand("/fac", "factions.standard", CmdFac, " - helps manage factions!")
+	cPluginManager.BindCommand("/fac", "factions.standard", CmdFac, "- leave, join or create a new faction")
 
 	LOG("Initialised " .. Plugin:GetName() .. " v." .. Plugin:GetVersion())
 	return true
