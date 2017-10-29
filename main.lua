@@ -3,12 +3,16 @@ PLUGIN = nil
 function Initialize(Plugin)
 	Plugin:SetName("Factions")
 	Plugin:SetVersion(1)
+    
+    dofile(cPluginManager:GetPluginsPath() .. "/Info.lua")
+    RegisterPluginInfoCommands()
+    RegisterPluginInfoConsoleCommands()
 
 	-- Hooks
 
     PLUGIN = Plugin
     
-	cPluginManager.BindCommand("/fac", "default", CmdFac, " - helps manage factions!")
+	cPluginManager.BindCommand("/fac", "factions.standard", CmdFac, " - helps manage factions!")
 
 	LOG("Initialised " .. Plugin:GetName() .. " v." .. Plugin:GetVersion())
 	return true
